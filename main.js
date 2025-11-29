@@ -1,3 +1,4 @@
+/*
 const todos=[
    {
         id:1,
@@ -39,21 +40,20 @@ for (let i =0; i<todos.length;i++) {
 for (let todo of todos){
     console.log(todo.ids);
 }
-    */
 //forEach ,map,filter
-/*
+//foreach
 todos.forEach(function(todo){
     console.log(todo.text);
 });
 
-*/
 
-/*
+
+//map
 const todoText= todos.map(function(todo){
     return todo.id;
 });
 console.log(todoText);
-*/
+
 
 //filter
 const todoComplete=todos.filter(function(todo){
@@ -63,4 +63,17 @@ const todoComplete=todos.filter(function(todo){
 })
 
 console.log(todoComplete);
+*/
 
+const x=4;
+const y=10;
+
+if(x >5 || y >10){
+    console.log("x is 10");
+}
+else if(x>10){
+    console.log('x is greater than 10');
+}
+else {
+    console.log('x is not 10');
+}
