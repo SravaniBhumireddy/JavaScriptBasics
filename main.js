@@ -82,7 +82,8 @@ else {
 */
 
 const x=11;
-const color=x>10 ? 'red' :'blue';
+//const color=x>10 ? 'red' :'blue';
+const color='green';
 switch(color){
     case 'red':
         console.log('color is red');
