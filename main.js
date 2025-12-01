@@ -129,11 +129,15 @@ function Person(firstName,lastName,dob){
     this.getBirthyear=function(){
         return this.dob.getFullYear();
     }
+    this.getFullName=function(){
+        return `${this.firstName} ${this.lastName}`;
+    }
 }
 //Instantiate object
 const person1 = new Person('john', 'doe', '2004-07-13');
 const person2 = new Person('Mary', 'smith', '2005-08-15');
 
 
-//console.log(person1.dob.getFullYear());
-console.log(person2.getBirthyear());
+console.log(person1.dob.getFullYear());//
+//console.log(person2.getBirthyear());//2005
+//console.log(person1.getFullName());//john doe
