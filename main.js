@@ -129,5 +129,6 @@ function Person(firstName,lastName,dob){
 }
 //Instantiate object
 const person1=new Person("john","doe","13-7-2004");
+const person2=new Person("Mary","smith","15-8-2005");
 
-console.log(person1);'6'
+console.log(person2.lastName);
