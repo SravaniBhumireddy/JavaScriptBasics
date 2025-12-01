@@ -114,9 +114,20 @@ function subNums(num1,num2){
 
 console.log(subNums(7,5));
 
-*/
+
 
 const subNums = (num1,num2) => {
     return num1-num2;
 }
 console.log(subNums(20,4));
+*/
+//constructor
+function Person(firstName,lastName,dob){
+    this.firstName=firstName;
+    this.lastName = lastName;
+    this.dob = dob;
+}
+//Instantiate object
+const person1=new Person("john","doe","13-7-2004");
+
+console.log(person1);'6'
