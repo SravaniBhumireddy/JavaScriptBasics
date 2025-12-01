@@ -116,6 +116,7 @@ console.log(subNums(7,5));
 
 */
 
-const subNums = (num1,num2) => console.log(num1-num2);
-
-subNums(24,5);
+const subNums = (num1,num2) => {
+    return num1-num2;
+}
+console.log(subNums(20,4));
