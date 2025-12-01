@@ -94,7 +94,6 @@ switch(color){
         console.log('color is not red or blue');
         break;
 }
-*/
 
 function addNums(num1,num2){
     console.log(num1+num2);
@@ -102,8 +101,21 @@ function addNums(num1,num2){
 
 addNums();
 
+
 function subNums(num1,num2){
-    console.log(num1-num2);
+    console.log(num1+num2);
 }
 
 subNums(7,5);
+
+function subNums(num1,num2){
+    return num1+num2;
+}
+
+console.log(subNums(7,5));
+
+*/
+
+const subNums = (num1,num2) => console.log(num1-num2);
+
+subNums(24,5);
