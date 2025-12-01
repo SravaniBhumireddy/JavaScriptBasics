@@ -125,10 +125,11 @@ console.log(subNums(20,4));
 function Person(firstName,lastName,dob){
     this.firstName=firstName;
     this.lastName = lastName;
-    this.dob = dob;
+    this.dob =new Date(dob);
 }
 //Instantiate object
-const person1=new Person("john","doe","13-7-2004");
-const person2=new Person("Mary","smith","15-8-2005");
+const person1 = new Person('john', 'doe', '2004-07-13');
+const person2 = new Person('Mary', 'smith', '2005-08-15');
 
-console.log(person2.lastName);
+
+console.log(person1.dob);
