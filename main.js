@@ -100,4 +100,10 @@ function addNums(num1,num2){
     console.log(num1+num2);
 }
 
-addNums(5,4);
+addNums();
+
+function subNums(num1,num2){
+    console.log(num1-num2);
+}
+
+subNums(7,5);
