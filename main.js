@@ -120,19 +120,46 @@ const subNums = (num1,num2) => {
     return num1-num2;
 }
 console.log(subNums(20,4));
-*/
+
 //constructor
 function Person(firstName,lastName,dob){
     this.firstName=firstName;
     this.lastName = lastName;
     this.dob =new Date(dob);
-    this.getBirthyear=function(){
+    /*this.getBirthyear=function(){
         return this.dob.getFullYear();
     }
     this.getFullName=function(){
         return `${this.firstName} ${this.lastName}`;
     }
+        
 }
+
+Person.prototype.getBirthyear=function(){
+    return this.dob.getFullYear();
+}
+Person.prototype.getFullName=function(){
+    return `${this.firstName} ${this.lastName}`;
+}
+
+*/
+
+//class
+class Person{
+    constructor(firstName,lastName,dob){
+        this.firstName=firstName;
+        this.lastName = lastName;
+        this.dob =new Date(dob);
+    }
+
+    getBirthyear(){
+        return this.dob.getFullYear();
+    }
+    getFullName(){
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
 //Instantiate object
 const person1 = new Person('john', 'doe', '2004-07-13');
 const person2 = new Person('Mary', 'smith', '2005-08-15');
@@ -140,4 +167,7 @@ const person2 = new Person('Mary', 'smith', '2005-08-15');
 
 //console.log(person1.dob.getFullYear());//2004
 //console.log(person2.getBirthyear());//2005
-console.log(person1.getFullName());//john doe
+//console.log(person1.getFullName());//john doe
+
+console.log(person2.getFullName());
+console.log(person1);
